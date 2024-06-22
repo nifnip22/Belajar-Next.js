@@ -5,6 +5,18 @@
     Contohnya di dalam folder blog, kita buat folder first dan second dengan page.tsx didalamnya.
 */ 
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    /*
+        Properti absolute digunakan jika kita ingin membuat title yang menghiraukan apa yang diterapkan
+        oleh properti template
+    */ 
+    title: {
+        absolute: 'Blog'
+    }
+}
+
 export default function Blog() {
     return (
         <h1>My Blogs</h1>
