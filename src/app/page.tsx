@@ -4,8 +4,15 @@
     Pastikan pemberian nama folder menggunakan lowercase karena nama folder akan digunakan sebagai URL Segment.
 */
 
+// UI Navigation
+import Link from 'next/link';
+
 export default function Home() {
-    return (
-        <h1>Home Page</h1>
-    )
+	return (
+		<>
+			<h1>Home Page</h1>
+			<Link href='/blog'>Blog</Link>
+			<Link href='/products'>Products</Link>
+		</>
+	);
 }
